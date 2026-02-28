@@ -16,6 +16,7 @@ def test_01():
     #     "files/output",
     # )
     wc.run_job(n=1000)
+
     #
     # Retorna error si la carpeta output/ no existe
     if not os.path.exists("files/output/"):
