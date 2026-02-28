@@ -1,6 +1,7 @@
 """Autograding script."""
 
-pylint: disable=broad-exception-raised
+# pylint: disable=broad-exception-raised
+
 import os
 
 import homework.word_count as wc
@@ -45,4 +46,3 @@ def test_01():
     assert result["by"] == 3000
     assert result["algorithms"] == 2000
     assert result["analysis"] == 4000
-    
