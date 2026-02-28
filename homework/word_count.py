@@ -35,6 +35,8 @@ def delete_folder(folder):
 
 def generate_file_copies(n):
 
+    os.makedirs("files/input/", exist_ok=True)
+
     for file in glob.glob("files/raw/*"):
         with open(file, "r", encoding="utf-8") as f:
             text = f.read()
